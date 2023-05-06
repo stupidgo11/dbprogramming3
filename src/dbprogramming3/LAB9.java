@@ -14,14 +14,14 @@ public class LAB9 {
     public static void main(String[] args) {
         String URL = "jdbc:mysql://localhost:3306/mydb3";
         String username = "root";
-        String password = "Z_oo09122546";
+        String password = "jame12345s";
         
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(URL, username, password);
             Statement statement= con.createStatement();
             String sql = "insert into student(studentID,firstName,lastName,email,deptID)"
-                    + "values('651124','Pasit','Winyan','pasit.winy@kmutt.ac.th','IT')";
+                    + "values('651105','Natthaphol','Nirattisaikul','natthaphol.nira@kmutt.ac.th','IT')";
             
             statement.executeUpdate(sql);
         } catch (ClassNotFoundException ex) {

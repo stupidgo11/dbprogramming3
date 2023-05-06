@@ -14,13 +14,13 @@ public class LAB10 {
     public static void main(String[] args) {
         String URL = "jdbc:mysql://localhost:3306/mydb3";
         String username = "root";
-        String password = "Z_oo09122546";
+        String password = "jame12345s";
         
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(URL, username, password);
             Statement statement= con.createStatement();
-            String sql = "update student set email = 'pasit.winy@mail.kmutt.ac.th' where studentID = '651124'";
+            String sql = "update student set email = 'nattahphol.nira@mail.kmutt.ac.th' where studentID = '651105'";
             
             statement.executeUpdate(sql);
         } catch (ClassNotFoundException ex) {

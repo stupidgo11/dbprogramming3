@@ -15,7 +15,7 @@ public class LAB12 {
     public static void main(String[] args) {
         String URL = "jdbc:mysql://localhost:3306/mydb3";
         String username = "root";
-        String password = "Z_oo09122546";
+        String password = "jame12345s";
         
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
